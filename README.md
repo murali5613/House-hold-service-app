@@ -53,7 +53,7 @@ A full-stack web application connecting customers with service professionals for
 
 1. **Clone Repository**
 ```bash
-git clone https://github.com/your-repo/household-services.git
+git clone https://github.com/murali5613/House-hold-service-app.git
 ```
 
 2. **Set Up Virtual Environment**
@@ -99,29 +99,3 @@ celery -A worker.celery_app worker --loglevel=info
 cd frontend
 npm run dev
 ```
-
-```python
->>> from backend.models import db
->>> db.create_all()
->>> exit()
-
-FLASK_APP=app.py
-FLASK_ENV=development
-SECRET_KEY=your_secret_key
-DATABASE_URI=sqlite:///database.db
-REDIS_URL=redis://localhost:6379/0
-
-flask run
-
-
-celery -A worker.celery_app worker --loglevel=info
-
-cd frontend
-python -m http.server 8000
-
-
-cd frontend
-python -m http.server 8000
-
-cd frontend
-python -m http.server 8000
