@@ -80,14 +80,8 @@ DATABASE_URI=sqlite:///database.db
 REDIS_URL=redis://localhost:6379/0
 ```
 
-5. **Initialize Database**
-```bash
-flask db init
-flask db migrate
-flask db upgrade
-```
 
-6. **Run Application**
+5. **Run Application**
 ```bash
 # Backend
 flask run
